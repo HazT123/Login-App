@@ -1,0 +1,20 @@
+<h2 class="page-header"></h2>
+<p>Welcome to Roast Well</p>
+{{# each products}}
+  <div class="row">
+    {{# each this}}
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{{ this.imagePath }}" class="image-responsive">
+      <div class="caption">
+        <h3>{{ this.drink_name }}</h3>
+        <p class="description">{{ this.description }}</p>
+        <div class="clearfix">
+            <div class="price pull-left">£3.50</div>
+            <a href="#" class="btn btn-primary pull-right btn-warning" role="button">Add</a></div>
+      </div>
+    </div>
+  </div>
+    {{/each}}
+  </div>
+{{/each}}
